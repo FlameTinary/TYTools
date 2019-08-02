@@ -1,0 +1,6 @@
+framework module Pods_TYTools_Tests {
+  umbrella header "Pods-TYTools_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

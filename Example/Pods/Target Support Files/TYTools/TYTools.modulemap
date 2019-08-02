@@ -1,0 +1,6 @@
+framework module TYTools {
+  umbrella header "TYTools-umbrella.h"
+
+  export *
+  module * { export * }
+}

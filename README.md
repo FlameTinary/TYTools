@@ -22,7 +22,7 @@ pod 'TYTools'
 
 ## Author
 
-tianyu, tianyu@meishubao.com
+Sheldon, tinarychina@gmail.com
 
 ## License
 

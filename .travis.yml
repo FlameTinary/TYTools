@@ -7,12 +7,9 @@ language: objective-c
 # cache: cocoapods
 podfile: Example/Podfile
 before_install:
-- xcodebuild -version
-- xcodebuild -showsdks
-- xcpretty --version
-- xcrun instruments -s || sleep 15
+- xcrun instruments -w 'iPhone 7' || sleep 15
 # - gem install cocoapods # Since Travis is not always on latest version
 # - pod install --project-directory=Example
 script:
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/TYTools.xcworkspace -scheme TYTools-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
+- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/TYTools.xcworkspace -scheme TYTools-Example -destination "name=iPhone 7" ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint

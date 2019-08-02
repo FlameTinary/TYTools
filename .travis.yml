@@ -7,7 +7,6 @@ language: objective-c
 # cache: cocoapods
 podfile: Example/Podfile
 before_install:
-- env
 - xcodebuild -version
 - xcodebuild -showsdks
 - xcpretty --version

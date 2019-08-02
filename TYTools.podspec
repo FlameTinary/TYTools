@@ -21,12 +21,12 @@ Pod::Spec.new do |s|
 A tools set.
                        DESC
 
-  s.homepage         = 'https://github.com/FlameTinary/TYTools.git'
+  s.homepage         = 'https://github.com/FlameTinary/TYTools'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Sheldon' => 'tinarychina@gmail.com' }
   s.source           = { :git => 'https://github.com/FlameTinary/TYTools.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://sheldon.top'
 
   s.ios.deployment_target = '8.0'
 

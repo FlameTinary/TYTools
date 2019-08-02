@@ -8,7 +8,7 @@ language: objective-c
 podfile: Example/Podfile
 before_install:
 - rvm use system 
-- sudo gem install cocoapods -v'0.39.0'
+- sudo gem install cocoapods
 script:
 - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/TYTools.xcworkspace -scheme TYTools-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint

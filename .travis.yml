@@ -8,8 +8,8 @@ language: objective-c
 podfile: Example/Podfile
 before_install:
 - xcrun instruments -w 'iPhone 7' || sleep 15
-# - gem install cocoapods # Since Travis is not always on latest version
-# - pod install --project-directory=Example
+- gem install cocoapods # Since Travis is not always on latest version
+- pod install --project-directory=Example
 script:
 - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/TYTools.xcworkspace -scheme TYTools-Example -destination "name=iPhone 7" ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint

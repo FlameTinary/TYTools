@@ -1,6 +1,6 @@
 # TYTools
 
-[![CI Status](https://img.shields.io/travis/tianyu/TYTools.svg?style=flat)](https://travis-ci.org/tianyu/TYTools)
+[![CI Status](https://img.shields.io/travis/FlameTinary/TYTools.svg?style=flat)](https://travis-ci.org/FlameTinary/TYTools)
 [![Version](https://img.shields.io/cocoapods/v/TYTools.svg?style=flat)](https://cocoapods.org/pods/TYTools)
 [![License](https://img.shields.io/cocoapods/l/TYTools.svg?style=flat)](https://cocoapods.org/pods/TYTools)
 [![Platform](https://img.shields.io/cocoapods/p/TYTools.svg?style=flat)](https://cocoapods.org/pods/TYTools)

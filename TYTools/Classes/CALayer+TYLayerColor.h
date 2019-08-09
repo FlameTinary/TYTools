@@ -10,5 +10,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CALayer (TYLayerColor)
+// 解决使用xib设置border color
 - (void)setBorderColorFromUIColor:(UIColor *)color;
 @end

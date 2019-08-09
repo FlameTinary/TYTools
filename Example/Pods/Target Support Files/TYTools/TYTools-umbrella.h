@@ -11,6 +11,7 @@
 #endif
 
 #import "CALayer+TYLayerColor.h"
+#import "UIImage+TYImageExtension.h"
 #import "NSData+TYDataExtension.h"
 #import "NSString+TYStringExtension.h"
 #import "TYDrawingView.h"
@@ -20,7 +21,6 @@
 #import "TYToolSet.h"
 #import "UIButton+TYButtonExtension.h"
 #import "UIColor+TYColorExtension.h"
-#import "UIImage+TYImageExtension.h"
 #import "UIView+TYViewExtension.h"
 
 FOUNDATION_EXPORT double TYToolsVersionNumber;

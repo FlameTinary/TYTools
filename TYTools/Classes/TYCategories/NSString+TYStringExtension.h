@@ -38,4 +38,16 @@
 - (NSString *)stringToCustomDate:(NSString *)dateString;
 //判断内容是否含有中文
 - (BOOL)containChinese;
+
+/// 判断是否字符串全为空格
+- (BOOL)isAllBlank;
+
+/// 通过正则表达式得到过滤表情之后的文本
+/// add by xuhuan
+/// @param text 输入文本
++ (NSString *)filterEmojiWithText:(NSString *)text;
+
+/// 判断是否包含emoji
+/// returnValue为NO表示不含有表情，YES表示含有表情
+- (BOOL)hasContainsEmoji;
 @end

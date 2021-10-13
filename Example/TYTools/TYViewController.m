@@ -7,6 +7,9 @@
 //
 
 #import "TYViewController.h"
+#import <TYTools/NSString+TYStringExtension.h>
+#import <TYTools/TYUIMacro.h>
+#import <TYTools/TYDeviceMacro.h>
 
 @interface TYViewController ()
 
@@ -18,6 +21,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSString * timeStr = @"34523413525";
+    NSLog(@"%@",[timeStr stringToDate]);
+    NSLog(@"%@",[timeStr returnChinaTimeData]);
+    if (UI_IS_IPHONE_X) {
+        TYLog(@"%@", @"是");
+    } else {
+        TYLog(@"不是");
+    }
 }
 
 - (void)didReceiveMemoryWarning

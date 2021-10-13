@@ -10,7 +10,7 @@
 
 @implementation NSData (TYDataExtension)
 //对象转NSData:对象必须实现NSCoding
-+(NSData *)objectToData:(NSObject *)object{
++ (NSData *)objectToData:(NSObject<NSCoding> *)object{
     NSMutableData *data = [[NSMutableData alloc] init];
     NSKeyedArchiver *archiver = [[NSKeyedArchiver alloc] initForWritingWithMutableData:data];
     [archiver encodeObject:object forKey:@"key"];//key是自定义的
@@ -18,7 +18,7 @@
     return data;
 }
 //NSData转对象:对象必须实现NSCoding
-+(NSObject *)dataToObject:(NSData *)data{
++ (NSObject *)dataToObject:(NSData<NSCoding> *)data{
     NSKeyedUnarchiver *unArchiver=[[NSKeyedUnarchiver alloc] initForReadingWithData:data];
     NSObject *object = [unArchiver decodeObjectForKey:@"key"];//key是自定义的与上面设置的应相同
     [unArchiver finishDecoding];

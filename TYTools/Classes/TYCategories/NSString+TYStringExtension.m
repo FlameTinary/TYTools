@@ -72,8 +72,6 @@ static  NSDateFormatter *countDownFormatter = nil;
     
     NSDate *timeData = [NSDate dateWithTimeIntervalSince1970:ceil([self doubleValue]/1000)];
     
-#pragma mark - modify by jianglincen
-    
     if (countDownFormatter==nil) {
         
         countDownFormatter = [[NSDateFormatter alloc] init];
@@ -103,7 +101,7 @@ static  NSDateFormatter *countDownFormatter = nil;
 }
 
 //判断内容是否含有中文
-- (BOOL)isChinese{
+- (BOOL)containChinese{
     for(int i=0; i< [self length];i++)
     {
         int a =[self characterAtIndex:i];

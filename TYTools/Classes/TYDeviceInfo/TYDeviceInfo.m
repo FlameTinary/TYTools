@@ -6,12 +6,12 @@
 //  Copyright © 2018年 Sheldon. All rights reserved.
 //
 
-#import "TYTools.h"
+#import "TYDeviceInfo.h"
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import <CoreTelephony/CTCarrier.h>
 #import "sys/utsname.h"
 
-@implementation TYTools
+@implementation TYDeviceInfo
 
 /*******************Device相关*******************/
 
@@ -71,7 +71,7 @@
 + (CGSize)deviceResolutionRatio
 {
     CGFloat scale_screen = [UIScreen mainScreen].scale;
-    CGSize size = [TYTools deviceSize];
+    CGSize size = [TYDeviceInfo deviceSize];
     return CGSizeMake(size.width*scale_screen, size.height*scale_screen);
 }
 

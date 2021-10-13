@@ -32,6 +32,21 @@ A tools set.
 
   s.source_files = 'TYTools/Classes/**/*'
   
+  s.subspec 'TYCategories' do |ss|
+      ss.source_files = 'TYTools/Classes/TYCategories/**/*'
+  end
+  s.subspec 'TYDeviceInfo' do |ss|
+      ss.source_files = 'TYTools/Classes/TYDeviceInfo/**/*'
+  end
+  s.subspec 'TYMacros' do |ss|
+      ss.source_files = 'TYTools/Classes/TYMacros/**/*'
+  end
+  s.subspec 'TYPhotoPicker' do |ss|
+      ss.source_files = 'TYTools/Classes/TYPhotoPicker/**/*'
+  end
+  s.subspec 'TYViews' do |ss|
+      ss.source_files = 'TYTools/Classes/TYViews/**/*'
+  end
   # s.resource_bundles = {
   #   'TYTools' => ['TYTools/Assets/*.png']
   # }

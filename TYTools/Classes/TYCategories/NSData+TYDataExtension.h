@@ -10,7 +10,7 @@
 
 @interface NSData (TYDataExtension)
 //对象转NSData:对象必须实现NSCoding
-+(NSData *)objectToData:(NSObject *)object;
++(NSData *)objectToData:(NSObject<NSCoding> *)object;
 //NSData转对象:对象必须实现NSCoding
-+(NSObject *)dataToObject:(NSData *)data;
++(NSObject *)dataToObject:(NSData<NSCoding> *)data;
 @end

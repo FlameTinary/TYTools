@@ -17,6 +17,7 @@
 + (UIImage *)imageRenderingModeImageNamed:(NSString *)imageName;
 //改变图片大小
 + (UIImage *)reSizeImage:(UIImage *)image toSize:(CGSize)reSize;
+- (instancetype)resizeImageToSize:(CGSize)reSize;
 //图片质量压缩
 + (UIImage*)compressImg:(UIImage*)img quality:(float)qly;
 //图片虚化处理

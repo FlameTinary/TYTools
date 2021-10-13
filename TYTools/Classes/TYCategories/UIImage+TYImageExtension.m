@@ -39,6 +39,13 @@
     UIGraphicsEndImageContext();
     return reSizeImage;
 }
+- (instancetype)resizeImageToSize:(CGSize)reSize {
+    UIGraphicsBeginImageContext(reSize);
+    [self drawInRect:CGRectMake(0, 0, reSize.width, reSize.height)];
+    UIImage *reSizeImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return reSizeImage;
+}
 //图片质量压缩
 +(UIImage*)compressImg:(UIImage*)img quality:(float)qly{
     NSData *data = UIImageJPEGRepresentation(img, qly);

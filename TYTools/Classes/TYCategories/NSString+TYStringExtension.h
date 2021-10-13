@@ -37,5 +37,5 @@
  */
 - (NSString *)stringToCustomDate:(NSString *)dateString;
 //判断内容是否含有中文
-- (BOOL)isChinese;
+- (BOOL)containChinese;
 @end

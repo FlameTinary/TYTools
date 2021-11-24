@@ -7,8 +7,23 @@
 //
 
 #import "NSString+TYStringExtension.h"
+#import <CommonCrypto/CommonDigest.h>
 
 @implementation NSString (TYStringExtension)
+
+//转换MD5
+- (NSString *)md5String{
+    const char *value = [self UTF8String];
+
+    unsigned char outputBuffer[CC_MD5_DIGEST_LENGTH];
+    CC_MD5(value, (CC_LONG)strlen(value), outputBuffer);
+
+    NSMutableString *outputString = [[NSMutableString alloc] initWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
+    for(NSInteger count = 0; count < CC_MD5_DIGEST_LENGTH; count++){
+        [outputString appendFormat:@"%02x", outputBuffer[count]];
+    }
+    return outputString;
+}
 
 - (NSString *)stringToDate {
     return [self stringToCustomDate:@"yyyy-MM-dd HH:mm:ss"];

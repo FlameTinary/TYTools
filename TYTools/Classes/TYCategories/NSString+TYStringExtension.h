@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (TYStringExtension)
+
+- (NSString *)md5String;
+
 //时间字符串
 - (NSString *)stringToDate;
 

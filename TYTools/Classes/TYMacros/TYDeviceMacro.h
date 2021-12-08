@@ -23,6 +23,8 @@
 #define kUserDefaults [NSUserDefaults standardUserDefaults]
 //通知中心 （单例对象）
 #define kNotificationCenter [NSNotificationCenter defaultCenter]
+//main bundle
+#define kMainBundle NSBundle.mainBundle
 
 
 // APP版本号

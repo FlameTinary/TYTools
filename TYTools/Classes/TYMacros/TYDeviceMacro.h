@@ -25,10 +25,10 @@
 #define kNotificationCenter [NSNotificationCenter defaultCenter]
 //main bundle
 #define kMainBundle NSBundle.mainBundle
-
+#define TYNib(x) [UINib nibWithNibName:x bundle:kMainBundle]
 
 // APP版本号
-#define kAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+#define kAppVersion [[kMainBundle infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 // 系统版本号
 #define kSystemVersion [[UIDevice currentDevice] systemVersion]
 // 获取当前语言

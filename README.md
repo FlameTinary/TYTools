@@ -17,7 +17,7 @@ TYTools is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'TYTools','~> 0.1.7'
+pod 'TYTools','~> 0.1.8'
 ```
 
 ## Usage

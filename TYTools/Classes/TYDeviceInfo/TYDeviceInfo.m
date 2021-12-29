@@ -83,7 +83,7 @@
     return carrier.carrierName;
 }
 //获取设备型号
-- (NSString*)deviceEquipment
++ (NSString*)deviceEquipment
 {
     struct utsname systemInfo;
     uname(&systemInfo);

@@ -32,5 +32,5 @@
 //运营商
 + (NSString *)deviceOperator;
 //获取设备型号
-- (NSString*)deviceEquipment;
++ (NSString*)deviceEquipment;
 @end

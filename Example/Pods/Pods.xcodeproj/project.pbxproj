@@ -68,6 +68,8 @@
 		39A79E4068D67CFE215FF9FF8F50DFD5 /* KWStringContainsMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CFCA48884FD83EA258FAE136CCA0DE3 /* KWStringContainsMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3AD50B556FDE470D4F3FBC243BD202D0 /* TYTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20140E22E9005B27776C0A05DF37B29C /* TYTools-dummy.m */; };
 		3BCBB947842785A84A76F4E91A1F8373 /* NSString+TYStringExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = A19C082B33573226E275F87FBBE937E3 /* NSString+TYStringExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D98DA30284BB5EE004D0B65 /* NSJSONSerialization+TYExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D98DA2E284BB5EE004D0B65 /* NSJSONSerialization+TYExtend.h */; };
+		3D98DA31284BB5EE004D0B65 /* NSJSONSerialization+TYExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98DA2F284BB5EE004D0B65 /* NSJSONSerialization+TYExtend.m */; };
 		3DBBC198220A6E99781CADC3189D36E1 /* KWHaveMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = BA350427F892FF83E927C239A701C280 /* KWHaveMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DC4A32E9F870135C404D03A269593DC /* KWBlockRaiseMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = F2A8FF9E16AF0652917B7B4234065154 /* KWBlockRaiseMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DE1B9C8274B475300BBA18A /* TYAuthorizationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DE1B9C6274B475300BBA18A /* TYAuthorizationManager.h */; };
@@ -357,6 +359,8 @@
 		3BF9CFDC149D988082A52EB180E10968 /* KWCallSite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWCallSite.h; path = Classes/Core/KWCallSite.h; sourceTree = "<group>"; };
 		3C98698EDA2640B90B363BA3E6A66B67 /* KWNull.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWNull.m; path = Classes/Core/KWNull.m; sourceTree = "<group>"; };
 		3D1B2A3B81476F2FF628F498840AD422 /* KWSharedExampleRegistry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWSharedExampleRegistry.m; path = "Classes/Shared Examples/KWSharedExampleRegistry.m"; sourceTree = "<group>"; };
+		3D98DA2E284BB5EE004D0B65 /* NSJSONSerialization+TYExtend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSJSONSerialization+TYExtend.h"; sourceTree = "<group>"; };
+		3D98DA2F284BB5EE004D0B65 /* NSJSONSerialization+TYExtend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSJSONSerialization+TYExtend.m"; sourceTree = "<group>"; };
 		3DE1B9C6274B475300BBA18A /* TYAuthorizationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYAuthorizationManager.h; sourceTree = "<group>"; };
 		3DE1B9C7274B475300BBA18A /* TYAuthorizationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYAuthorizationManager.m; sourceTree = "<group>"; };
 		426C59ABE98171D230C24814BF2F5C6C /* KWLet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWLet.h; path = Classes/Core/KWLet.h; sourceTree = "<group>"; };
@@ -646,6 +650,8 @@
 				4A311DAE0364FF1590BA82D9E98DC0E0 /* UIImage+TYImageExtension.m */,
 				8A767970B7DC3F0791E08B8BF5E9E71E /* UIView+TYViewExtension.h */,
 				25F1CD26E037B462956C233A7B3DC016 /* UIView+TYViewExtension.m */,
+				3D98DA2E284BB5EE004D0B65 /* NSJSONSerialization+TYExtend.h */,
+				3D98DA2F284BB5EE004D0B65 /* NSJSONSerialization+TYExtend.m */,
 			);
 			name = TYCategories;
 			path = TYTools/Classes/TYCategories;
@@ -1118,6 +1124,7 @@
 				8700113CFD31839F4B00C1F708B6009F /* TYUIMacro.h in Headers */,
 				6924EE092B25DBE97C97B0432A7F747A /* UIButton+TYButtonExtension.h in Headers */,
 				24C3254992317DB2FC1B025EEE83EFE9 /* UIColor+TYColorExtension.h in Headers */,
+				3D98DA30284BB5EE004D0B65 /* NSJSONSerialization+TYExtend.h in Headers */,
 				709C14BE3A51356FB58EECBDCDF02EC1 /* UIImage+TYImageExtension.h in Headers */,
 				B14D0A38A50261F02DB71C274B650600 /* UIView+TYViewExtension.h in Headers */,
 			);
@@ -1554,6 +1561,7 @@
 				776A1E1F2EAF79D88B632E7F1FBDF59E /* UIColor+TYColorExtension.m in Sources */,
 				180C4B85C46C6BAA1AE6086CAF5C1A67 /* UIImage+TYImageExtension.m in Sources */,
 				8F960143753FFFC8A59EFC00EBAED5BE /* UIView+TYViewExtension.m in Sources */,
+				3D98DA31284BB5EE004D0B65 /* NSJSONSerialization+TYExtend.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
